@@ -1,0 +1,93 @@
+.logo   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.textoH1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c50083;
+}  
+
+.paragrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    font-size: 10px;
+}
+
+.container{
+    text-align: center;
+    margin-top: auto;
+  }
+  .btn{
+    border: 01px solid #c50083 ;
+    background: none;
+    padding: 05px 05px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .btn1,.btn2                                                                                                                                                                                                                                              {
+      color: rgb(197, 0, 131);
+     
+  }
+  .btn1:hover, .btn2:hover{
+      color: rgb(255, 255, 255);
+  }
+
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(45deg, #5d00b4,  #c50083 ) ;
+    z-index: -1;
+    transition: 0.6s;
+  }
+
+  .btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .btn1:hover::before{
+      
+    height: 180%
+  }
+
+  .btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .btn2:hover::before{
+    height: 180%;
+  }
+
+  a:link, a:visited {
+	text-decoration: none;
+    color:rgb(197, 0, 131)
+	}
+a:hover {
+	text-decoration: none; 
+	color: rgb(255, 255, 255)
+	}
+a:active {
+	text-decoration: none;
+    color: rgb(197, 0, 131)
+	}
