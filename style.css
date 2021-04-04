@@ -8,14 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #c50083;
-}  
+    color: #ffffff;
+    text-shadow: 0.2em 0.2em 0.6em rgb(0, 0, 0);
+}   
 
 .paragrafo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.5em black
+    
 }
 
 .h2 {
@@ -25,6 +29,8 @@
     margin-top: -20px;
     font-size: 10px;
     text-align: center;
+    color: white;
+    text-shadow: 0.5em 0.5em 0.5em black
 }
 
 /** ANIMAÇÃO MASCOTE CONNECT **/
@@ -33,7 +39,7 @@
     height: auto;
     position: absolute;
     top: 40%;
-    width: rem(200);
+    width: auto;
     
     animation-name: fly;
     animation-duration: 5s;    
@@ -48,10 +54,10 @@
         transform: translate(-150px, -120px );
     }
     50% {
-        transform: translate(-50px, -100px);
+        transform: translate(50px, -100px);
     }
     100% {
-            transform: translate(150vw, -250px);
+            transform: translate(100vw, -100px);
     }
 }
 
@@ -71,11 +77,11 @@
     margin: 10px;
     transition: 0.4s;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 10px;
   }
   .btn1,.btn2                                                                                                                                                                                                                                              {
-      color: rgb(197, 0, 131);
+      color: rgb(255, 255, 255);
      
   }
   .btn1:hover, .btn2:hover{
@@ -122,57 +128,11 @@ a:active {
 	text-decoration: none;
     color: rgb(197, 0, 131)
 	}
+    
+    html, body {
+        overflow-x: hidden;
+    }
 
-
-
-    @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
-
-    body {
-      font-family: "Lato";
-      background: #cecece;
-      overflow: hidden;
-      height: 100%;
-      width: 100%;
-      -webkit-font-smoothing: antialiased;
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-    }
-    
-    #particles-js, #parallax, .layer, .some-space, .some-more-space {
-      height: 100%;
-      position: absolute;
-      width: 100%;
-    }
-    
-    #particles-js {
-      opacity: 0.6;
-    }
-    
-    .some-space {
-      animation: rotate 18s 0.5s infinite linear reverse;
-    }
-    
-    .some-more-space {
-      -webkit-animation: rotate 15s 0.1s infinite linear;
-              animation: rotate 15s 0.1s infinite linear;
-    }
-    
-    @-webkit-keyframes rotate {
-      0% {
-        transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
-      }
-      100% {
-        transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
-      }
-    }
-    
-    @keyframes rotate {
-      0% {
-        transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
-      }
-      100% {
-        transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
-      }
+    ::-webkit-scrollbar{
+        display: none;
     }

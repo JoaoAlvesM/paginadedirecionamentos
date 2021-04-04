@@ -10,14 +10,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js"></script>
-    
   
 
     
     </head>
-    <div>
-        
-        <div id="parallax">
+
+           
+        <div id="parallax" >
             <div class="layer" data-depth="0.4">
               <div id="particles-js"></div>
             </div>
@@ -46,139 +45,22 @@
     
     </div>
     <div class="mascote">
-        <img src="Imagens/mascote connect 2.png" height="150px">
+        <img src="Imagens/mascote connect 2.png" width="150px">
 </div>
 
     </div>    
         <div class="container">
-            <a href="https://api.whatsapp.com/send?phone=5585991362402"> <button type="button" class="btn btn1" > <b> Falar no Whatsapp </button> <br>
-                <a href="http://agenciaconnectdesign.com.br/">    <button type="button" class="btn btn1"  > <b> Acesse nosso Site </button> <br>
-                    <a href="#">   <button type="button" class="btn btn2" > <b> Falar no Whatsapp </button> <br>
-
+            <a href="http://agenciaconnectdesign.com.br/"> <button type="button" class="btn btn1" > <b>Acesse nosso Site</button> <br>
+                <a href="https://api.whatsapp.com/send?phone=5585991362402">    <button type="button" class="btn btn2"  > <b> Chama a gente no Whatsapp !</button> <br>
+                    <a href="#">   <button type="button" class="btn btn1" > <b> Portifólio de artes para redes sociais</button> <br>
+                        <a href="#">   <button type="button" class="btn btn2" > <b>"Conect-se" ao mundo digital e venha alavancar suas vendas !</button> <br>
+                            <a href="#">   <button type="button" class="btn btn1" > <b>Ebook "10 dicas para vender mais"</button> <br>
+                                <a href="#">   <button type="button" class="btn btn2" > <b>Cliente - Ótica Ideal</button> <br>
+                                    <a href="#">   <button type="button" class="btn btn1" > <b>Cliente - Doce Magia</button> <br>
+                                        <a href="#">   <button type="button" class="btn btn1" > <b>Cliente  - Sinlife</button> <br>
             </div>  
         </div>
-        
-        
+<i class="fa fa-copyright" aria-hidden="true" > &copy; <a href="http://agenciaconnectdesign.com.br/"> Agência Connect Design, 2021. </i></a>
     </body>
-    <script>
-        $("#parallax").parallax({
-	invertX: true,
-	invertY: true,
-	scalarX: 10,
-	frictionY: 0.1
-});
-
-particlesJS("particles-js", {
-	particles: {
-		number: {
-			value: 120,
-			density: {
-				enable: true,
-				value_area: 800
-			}
-		},
-		color: {
-			value: "#919191"
-		},
-		shape: {
-			type: "circle",
-			stroke: {
-				width: 0,
-				color: "#000000"
-			},
-			polygon: {
-				nb_sides: 5
-			},
-			image: {
-				src: "img/github.svg",
-				width: 100,
-				height: 100
-			}
-		},
-		opacity: {
-			value: 0.5,
-			random: false,
-			anim: {
-				enable: false,
-				speed: 1,
-				opacity_min: 0.1,
-				sync: false
-			}
-		},
-		size: {
-			value: 3,
-			random: true,
-			anim: {
-				enable: false,
-				speed: 40,
-				size_min: 0.1,
-				sync: false
-			}
-		},
-		line_linked: {
-			enable: true,
-			distance: 150,
-			color: "#919191",
-			opacity: 0.4,
-			width: 1
-		},
-		move: {
-			enable: true,
-			speed: 6,
-			direction: "none",
-			random: false,
-			straight: false,
-			out_mode: "out",
-			bounce: false,
-			attract: {
-				enable: false,
-				rotateX: 600,
-				rotateY: 1200
-			}
-		}
-	},
-	interactivity: {
-		detect_on: "canvas",
-		events: {
-			onhover: {
-				enable: true,
-				mode: "grab"
-			},
-			onclick: {
-				enable: true,
-				mode: "push"
-			},
-			resize: true
-		},
-		modes: {
-			grab: {
-				distance: 140,
-				line_linked: {
-					opacity: 1
-				}
-			},
-			bubble: {
-				distance: 400,
-				size: 40,
-				duration: 2,
-				opacity: 8,
-				speed: 3
-			},
-			repulse: {
-				distance: 200,
-				duration: 0.4
-			},
-			push: {
-				particles_nb: 4
-			},
-			remove: {
-				particles_nb: 2
-			}
-		}
-	},
-	retina_detect: true
-});
-
-    </script>
-    
+    <script src="parallax.js"></script>
 </html>
